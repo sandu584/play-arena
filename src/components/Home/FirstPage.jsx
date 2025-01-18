@@ -6,7 +6,7 @@ const FirstPage = () => {
             {/* Video Section */}
             <div className="bg-black relative z-10 h-5/6 w-full">
                 <video
-                    src="../../../videos/prime-10sec.mp4"
+                    src="https://playarena.in/wp-content/uploads/2024/08/pixel-10sec-2.mp4"
                     muted
                     loop
                     autoPlay
