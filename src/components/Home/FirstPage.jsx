@@ -18,7 +18,7 @@ const FirstPage = () => {
             description: "Strategy and action sports for the squad",
             gamesNo: "7",
             bgColor: "#EDFFB3",
-            video: "../../../videos/prime-10sec.mp4",
+            video: "https://res.cloudinary.com/sandeepk/video/upload/v1737280492/prime-10sec_jpizld.mp4",
         },
         {
             id: "1",
@@ -27,7 +27,7 @@ const FirstPage = () => {
             description: "Short format, big thrills served a la carte",
             gamesNo: "8",
             bgColor: "#E8E8E8",
-            video: "../../../videos/studio-10sec-1.mp4",
+            video: "https://res.cloudinary.com/sandeepk/video/upload/v1737280503/studio-10sec-1_phx1zo.mp4",
         },
         {
             id: "2",
@@ -36,7 +36,7 @@ const FirstPage = () => {
             description: "Classic favourites for the recreational sport",
             gamesNo: "7",
             bgColor: "#B3F0FF",
-            video: "../../../videos/union-10sec.mp4",
+            video: "https://res.cloudinary.com/sandeepk/video/upload/v1737280493/union-10sec_a8orei.mp4",
         },
         {
             id: "3",
@@ -45,7 +45,7 @@ const FirstPage = () => {
             description: "Toddler-sized fun for little champs",
             gamesNo: "2",
             bgColor: "#CBDED4",
-            video: "../../../videos/junior-10sec.mp4",
+            video: "https://res.cloudinary.com/sandeepk/video/upload/v1737280580/junior-10sec_fchu6l.mp4",
         },
         {
             id: "4",
@@ -54,7 +54,7 @@ const FirstPage = () => {
             description: "Shoot, race and more in the gamer’s den",
             gamesNo: "7",
             bgColor: "#D1EBD8",
-            video: "../../../videos/pixel-10sec-2.mp4",
+            video: "https://res.cloudinary.com/sandeepk/video/upload/v1737280567/pixel-10sec-2_zibgtk.mp4",
         }
     ];
 
