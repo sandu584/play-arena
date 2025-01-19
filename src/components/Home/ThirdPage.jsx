@@ -105,7 +105,7 @@ const ThirdPage = () => {
     };
 
     return (
-        <section className="min-h-screen w-screen bg-[#FFDB58]">
+        <section className="min-h-screen w-full bg-[#FFDB58]">
             <h1 className="uppercase mx-12 pt-10 text-3xl lg:text-4xl font-sora font-black px-6">Specials</h1>
 
             <div className='bg-[#73A580] py-6 h-auto w-11/12 m-auto mt-10 border-2 rounded-xl'>

@@ -8,7 +8,7 @@ const Layout = () => {
         <div className='h-full w-full bg-cyan-300 flex flex-col'>
             <Header />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

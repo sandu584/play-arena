@@ -7,8 +7,6 @@ import { IoIosArrowDown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineCall } from "react-icons/md";
 
-
-
 const Header = () => {
     return (
         <header className='h-16 lg:h-20 w-full z-[100] bg-black fixed flex justify-center items-center p-3'>
