@@ -53,51 +53,51 @@ const ThirdPage = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4, // Default for larger screens (more than 1409px)
+        slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
         pauseOnHover: true,
         responsive: [
             {
-                breakpoint: 1409, // For screens with width less than or equal to 1409px
+                breakpoint: 1409,
                 settings: {
-                    slidesToShow: 3, // Show 4 slides for screens between 1409px and 1240px
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 1270, // For screens with width less than or equal to 1240px
+                breakpoint: 1270,
                 settings: {
-                    slidesToShow: 3, // Show 3 slides for screens between 1240px and 1025px
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 1025, // For screens with width less than or equal to 1025px
+                breakpoint: 1025,
                 settings: {
-                    slidesToShow: 2, // Show 2 slides for screens between 1025px and 768px
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 768, // For screens with width less than or equal to 768px
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 2, // Show 2 slides for tablets
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 658, // For screens with width less than or equal to 658px
+                breakpoint: 658,
                 settings: {
-                    slidesToShow: 1, // Show 1 slide for smaller screens
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480, // For screens with width less than or equal to 480px (mobile devices)
+                breakpoint: 480,
                 settings: {
-                    slidesToShow: 1, // Show 1 slide on mobile devices
+                    slidesToShow: 1,
                     slidesToScroll: 1
                 }
             }
@@ -105,7 +105,7 @@ const ThirdPage = () => {
     };
 
     return (
-        <section className="min-h-screen w-screen bg-[#FFDB58]">
+        <section className="min-h-screen w-full bg-[#FFDB58]">
             <h1 className="uppercase mx-12 pt-10 text-3xl lg:text-4xl font-sora font-black px-6">Specials</h1>
 
             <div className='bg-[#73A580] py-6 h-auto w-11/12 m-auto mt-10 border-2 rounded-xl'>
