@@ -4,13 +4,13 @@ import BirthdayCard from './BirthdayCard.jsx'
 
 const SecondPage = () => {
 	return (
-		<section className='h-auto w-full bg-[#ebdbcc] relative z-50 transition-all duration-300 px-7'>
+		<section className='h-auto w-full bg-[#ebdbcc] relative z-50 transition-all duration-300 px-7 flex justify-center items-center'>
 			<div className='py-10 lg:mx-10 xl:mx-48 max-w-[1080px]'>
 				<h1 className='font-sora text-4xl lg:text-7xl font-extrabold'>Play, Your Way</h1>
 
 				<p className='mt-6 text-lg font-sora'>When it comes to get-togethers, the more is always the merrier. You bring the people, we’ll take care of the rest. Call us for customized birthdays, farewells, anniversaries and other events or group packages with entertainment, music and a fantastic range of F&B to choose from.</p>
 
-				<div className='w-full h-auto flex-wrap lg:flex justify-between items-center'>
+				<div className='w-full h-auto flex lg:flex-row flex-col gap-3 justify-between items-center'>
 					<BirthdayCard
 						svg="https://playarena.in/wp-content/uploads/2024/01/Birthday-Bashes-Icon.svg"
 						title="Birthday Bashes"

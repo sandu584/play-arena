@@ -105,39 +105,41 @@ const ThirdPage = () => {
     };
 
     return (
-        <section className="min-h-screen w-full bg-[#FFDB58]">
-            <h1 className="uppercase mx-12 pt-10 text-3xl lg:text-4xl font-sora font-black px-6">Specials</h1>
+        <section className="min-h-screen h-auto w-full py-4 bg-[#ffa69e]">
+            <div className='flex flex-col justify-around gap-4 items-start'>
+                <h1 className="uppercase mx-12 py-4 text-3xl lg:text-4xl font-sora font-black px-6">Specials</h1>
 
-            <div className='bg-[#73A580] py-6 h-auto w-11/12 m-auto mt-10 border-2 rounded-xl'>
-                <Slider {...settings}>
-                    {
-                        slides.map((slide, index) => (
-                            <div key={index}>
-                                <div className="m-auto mx-10 min-h-[520px] relative flex justify-between w-80 flex-col rounded-xl hover:bg-[#8E362F] bg-clip-border text-gray-700 shadow-md bg-[#F5F5DC] hover:text-white transition-all duration-150 border-2 hover:border-black">
-                                    <div>
-                                        <div className="relative mx-4 mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                                            <img src={slide.image} alt="" />
+                <div className='bg-[#21b0fe] py-6 h-auto w-11/12 m-auto mt-4 border-2 rounded-xl'>
+                    <Slider {...settings}>
+                        {
+                            slides.map((slide, index) => (
+                                <div key={index}>
+                                    <div className="m-auto mx-10 min-h-[520px] relative flex justify-between w-80 flex-col rounded-xl hover:bg-[#cb997e] bg-clip-border text-gray-700 shadow-md bg-[#F5F5DC] hover:text-white transition-all duration-150 border-2 hover:border-black">
+                                        <div>
+                                            <div className="relative mx-4 mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+                                                <img src={slide.image} alt="" />
+                                            </div>
+                                            <div className="p-6">
+                                                <h5 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased font-sora">
+                                                    {slide.title}
+                                                </h5>
+                                                <p className="block font-sora text-base font-light leading-relaxed text-inherit antialiased">
+                                                    {slide.description}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div className="p-6">
-                                            <h5 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased font-sora">
-                                                {slide.title}
-                                            </h5>
-                                            <p className="block font-sora text-base font-light leading-relaxed text-inherit antialiased">
-                                                {slide.description}
-                                            </p>
+                                        <div className="p-6 pt-0">
+                                            <Link to="/" data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sora text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                                                Book Now
+                                            </Link>
                                         </div>
                                     </div>
-                                    <div className="p-6 pt-0">
-                                        <Link to="/" data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sora text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                            Read More
-                                        </Link>
-                                    </div>
+
                                 </div>
-
-                            </div>
-                        ))
-                    }
-                </Slider>
+                            ))
+                        }
+                    </Slider>
+                </div>
             </div>
         </section>
     );

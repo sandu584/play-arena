@@ -1,6 +1,5 @@
 import React from 'react'
 import SlotInfoCard from './SlotInfoCard'
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -8,7 +7,7 @@ const FourthPage = () => {
 
     return (
         <section className='h-auto w-full bg-teal-800'>
-            <div className='w-full px-5 font-sora bg-black h-[450px] text-white flex justify-center items-center'>
+            <div className='w-full h-full p-5 font-sora bg-black text-white flex justify-center items-center'>
 
 
                 <div className='max-w-[1080px] w-full lg:h-[290px] h-auto flex flex-col justify-between items-start'>
