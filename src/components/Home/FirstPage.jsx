@@ -6,7 +6,7 @@ import Button from "./Button.jsx";
 const FirstPage = () => {
 
     const { id, setId } = useCard();
-    const [currVideo, setCurrVideo] = useState(id || 0);
+    const [currVideo, setCurrVideo] = useState(id);
     useEffect(() => {
         setCurrVideo(id);
     }, [id])
@@ -60,14 +60,13 @@ const FirstPage = () => {
     ];
 
     return (
-        <section className="lg:h-screen h-auto w-full relative pt-14 lg:pt-20">
+        <section className="lg:h-screen h-auto w-full relative pt-14">
             {/* Video Section */}
-            <div className="bg-black relative z-10 h-5/6 w-full">
+            <div className="bg-black relative z-20 h-5/6 w-full">
                 <video
                     key={cardsInfo[currVideo].id}
                     src={cardsInfo[currVideo].video}
                     muted
-                    loop
                     autoPlay
                     className="object-cover h-full w-full"
                     onEnded={() => setId((prev) => (prev + 1) % 5)}
@@ -76,34 +75,30 @@ const FirstPage = () => {
 
             {/* Bottom Section */}
             <div className="absolute bottom-0 z-30 w-full overflow-visible lg:h-1/6 flex">
-                {
-                    cardsInfo.map((card) => (
-                        <Card
-                            key={card.id}
-                            id={card.id}
-                            svg={card.svg}
-                            title={card.title}
-                            description={card.description}
-                            gamesNo={card.gamesNo}
-                            bgColor={card.bgColor}
-                            activeCardId={currVideo}
-                        />
-                    ))
-                }
+                {cardsInfo.map((card) => (
+                    <Card
+                        key={card.id}
+                        id={card.id}
+                        svg={card.svg}
+                        title={card.title}
+                        description={card.description}
+                        gamesNo={card.gamesNo}
+                        bgColor={card.bgColor}
+                        activeCardId={currVideo}
+                    />
+                ))}
             </div>
 
-            {/* when screen is less than lg: */}
+            {/* When screen is less than lg: */}
             <div className="lg:hidden block">
                 <div className="h-14 p-2 bg-black flex justify-around items-center w-full">
-                    {
-                        cardsInfo.map((card) => (
-                            <img key={card.id} src={card.svg} className='w-8 p-2 rounded-lg bg-transparent' style={{ backgroundColor: card.bgColor }} alt="" />
-                        ))
-                    }
+                    {cardsInfo.map((card) => (
+                        <img onClick={() => setId(card.id)} key={card.id} src={card.svg} className='w-8 p-2 rounded-lg bg-transparent' style={{ backgroundColor: card.bgColor }} alt="" />
+                    ))}
                 </div>
 
                 <div className="min-h-48 h-auto w-full font-sora flex justify-start items-center" style={{ backgroundColor: cardsInfo[currVideo].bgColor }}>
-                    <div className="max-w-80 h-full px-4 flex flex-col justify-start items-center gap-4" id={id} onMouseEnter={(e) => setId(id)}    >
+                    <div className="max-w-80 h-full px-4 flex flex-col justify-start items-center gap-4" id={id} onMouseEnter={(e) => setId(id)}>
                         <div>
                             <h1 className="lg:text-5xl text-4xl font-black">{cardsInfo[currVideo].title}</h1>
                             <p className="mt-2 font-semibold">{cardsInfo[currVideo].description}</p>
@@ -116,6 +111,7 @@ const FirstPage = () => {
                 </div>
             </div>
         </section>
+
     )
 }
 

@@ -105,16 +105,16 @@ const ThirdPage = () => {
     };
 
     return (
-        <section className="min-h-screen h-auto w-full py-4 bg-[#ffa69e]">
+        <section className="min-h-screen h-auto w-full py-4 bg-[#fff]">
             <div className='flex flex-col justify-around gap-4 items-start'>
                 <h1 className="uppercase mx-12 py-4 text-3xl lg:text-4xl font-sora font-black px-6">Specials</h1>
 
-                <div className='bg-[#21b0fe] py-6 h-auto w-11/12 m-auto mt-4 border-2 rounded-xl'>
+                <div className='bg-[#A94A4A] py-6 h-auto w-11/12 m-auto mt-4 border-2 border-black rounded-xl'>
                     <Slider {...settings}>
                         {
                             slides.map((slide, index) => (
                                 <div key={index}>
-                                    <div className="m-auto mx-10 min-h-[520px] relative flex justify-between w-80 flex-col rounded-xl hover:bg-[#cb997e] bg-clip-border text-gray-700 shadow-md bg-[#F5F5DC] hover:text-white transition-all duration-150 border-2 hover:border-black">
+                                    <div className="m-auto mx-10 min-h-[520px] relative flex justify-between w-80 flex-col rounded-xl hover:bg-[#fff] bg-clip-border text-gray-700 shadow-md bg-[#FFEE7D] transition-all duration-150 border-2 hover:border-black">
                                         <div>
                                             <div className="relative mx-4 mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
                                                 <img src={slide.image} alt="" />
@@ -129,7 +129,7 @@ const ThirdPage = () => {
                                             </div>
                                         </div>
                                         <div className="p-6 pt-0">
-                                            <Link to="/" data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sora text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                                            <Link to="/" data-ripple-light="true" type="button" className="select-none rounded-lg bg-[#44FADD] py-3 px-6 text-center align-middle font-sora text-xs font-bold uppercase text-black shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                                 Book Now
                                             </Link>
                                         </div>
