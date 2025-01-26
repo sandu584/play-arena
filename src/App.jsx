@@ -6,6 +6,7 @@ import InfiniteSlider from "./components/Home/InfiniteSlider";
 import SecondPage from "./components/Home/SecondPage";
 import ThirdPage from "./components/Home/ThirdPage";
 import { CardProvider } from "./store/CardContextProvider";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 	const [id, setId] = useState(0);
